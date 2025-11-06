@@ -279,6 +279,34 @@
         .page-view {
             display: none;
         }
+        /* Left Sidebar Navigation Text Color */
+        /* Ensure sidebar nav items and their icons/text are white in the left navigation */
+        .sidebar .nav-item {
+            color: white;
+        }
+        .sidebar .nav-item i,
+        .sidebar .nav-item span {
+            color: inherit;
+        }
+        /* === Horizontal Top Navbar Text === */
+        .top-navbar .nav-item {
+            color: white;
+        }
+
+        .top-navbar .nav-item:hover,
+        .top-navbar .nav-item-active {
+            color: var(--color-accent);
+        }
+
+        /* Preserve Dark Mode Styling */
+        html.dark .top-navbar .nav-item {
+            color: #D1D5DB; /* gray-300 */
+        }
+
+        html.dark .top-navbar .nav-item:hover,
+        html.dark .top-navbar .nav-item-active {
+            color: var(--color-accent);
+        }
     </style>
 </head>
 <body class="transition-colors duration-500">
